@@ -122,13 +122,12 @@ export default function Work() {
               <span className="label label--blue">Our work · Proven Impact</span>
               <h1 className="h-display">Numbers we can stand behind.</h1>
               <p className="lede">
-                Work delivered by our team at production scale. Client names
-                are descriptive placeholders — the numbers are real.
+                Work delivered by our team at production scale.
               </p>
             </div>
             <div className="work-hero-stats">
               <div className="stat-cell">
-                <span className="stat-num serif">2</span>
+                <span className="stat-num serif">20+</span>
                 <span className="stat-name mono">Projects shipped</span>
               </div>
               <div className="stat-cell">
