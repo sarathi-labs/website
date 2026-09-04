@@ -43,7 +43,62 @@ export default function Contact() {
               </li>
               <li style={{ borderTopColor: "var(--rule-inv)" }}>
                 <h4>Studio</h4>
-                <span>Bengaluru, India</span>
+                <span>Mumbai, India</span>
+              </li>
+              <li style={{ borderTopColor: "var(--rule-inv)" }}>
+                <h4>Social</h4>
+                <div className="flex items-center gap-4">
+                  <a
+                    href="https://www.linkedin.com/company/sarathi-labs/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    LinkedIn
+                  </a>
+                  {/*
+                  <a
+                    href="https://instagram.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    Instagram
+                  </a>
+                  <a
+                    href="https://facebook.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    Facebook
+                  </a>
+                  <a
+                    href="https://x.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    X / Twitter
+                  </a>
+                  <a
+                    href="https://github.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href="https://youtube.com"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="hover:text-white transition-colors"
+                  >
+                    YouTube
+                  </a>
+                  */}
+                </div>
               </li>
             </Reveal>
           </div>
