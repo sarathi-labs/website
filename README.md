@@ -1,4 +1,4 @@
-# Sarathi Labs — React + Vite + shadcn/ui
+# Sarathi Labs Website — React + Vite + shadcn/ui
 
 A React port of the original static Sarathi Labs website, rebuilt with
 Vite, React Router, Tailwind CSS, and shadcn/ui — while preserving the
