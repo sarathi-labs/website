@@ -330,7 +330,10 @@ p:last-child{margin-bottom:0}
   border-bottom:1px solid rgba(255,255,255,0.12);
 }
 .nav.is-dark .lg-light{opacity:0}
-.nav.is-dark .lg-dark{opacity:1}
+.nav.is-dark .lg-dark{
+  opacity:1;
+  filter:brightness(0) invert(97%) sepia(8%) saturate(300%) hue-rotate(350deg);
+}
 .nav.is-dark .nav-links a{color:var(--text-inv)}
 .nav.is-dark .nav-links a:hover,.nav.is-dark .nav-links a.is-active{color:#FFFFFF}
 .nav.is-dark .nav-burger{color:var(--text-inv)}
