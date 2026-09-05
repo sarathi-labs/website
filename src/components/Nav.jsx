@@ -97,7 +97,7 @@ export default function Nav() {
         <Link
           className="nav-logo relative block h-[50px] w-16 flex-none no-underline"
           to="/"
-          aria-label="Sarathi Labs — home"
+          aria-label="Sarathi Labs - home"
           onClick={() => setOpen(false)}
         >
           <img

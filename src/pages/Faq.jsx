@@ -16,12 +16,12 @@ const GROUP_1 = [
   {
     n: "01",
     q: "How does a first conversation usually go?",
-    a: "Ninety minutes, no deck. You describe what feels harder than it should; we ask the questions that separate the symptom from the cause. You leave with a written read-back of what we heard and what we'd look at first — whether or not you hire us.",
+    a: "Ninety minutes, no deck. You describe what feels harder than it should; we ask the questions that separate the symptom from the cause. You leave with a written read-back of what we heard and what we'd look at first - whether or not you hire us.",
   },
   {
     n: "02",
     q: "How long before we see something working?",
-    a: "Two to four weeks for the first working piece, on most engagements. We deliberately scope the first build small enough to ship inside a month — partly so you get value early, mostly so you can judge us on something real before committing further.",
+    a: "Two to four weeks for the first working piece, on most engagements. We deliberately scope the first build small enough to ship inside a month - partly so you get value early, mostly so you can judge us on something real before committing further.",
   },
   {
     n: "03",
@@ -44,7 +44,7 @@ const GROUP_2 = [
   {
     n: "06",
     q: "What if the problem turns out not to be technology?",
-    a: "Then we say so. A fair share of diagnostics end with a process change, a clearer owner for a decision, or one report being deleted — not a build. We'd rather lose the project than sell a system that papers over the real issue.",
+    a: "Then we say so. A fair share of diagnostics end with a process change, a clearer owner for a decision, or one report being deleted - not a build. We'd rather lose the project than sell a system that papers over the real issue.",
   },
   {
     n: "07",
@@ -62,7 +62,7 @@ const GROUP_3 = [
   {
     n: "09",
     q: "What happens when the engagement ends?",
-    a: "You own the code, the infrastructure, and the documentation outright. Handover is a scheduled part of the plan, not an afterthought — a working period where your team runs the system while we're still available. Plenty of clients keep us on afterwards, but that should be a choice, not a dependency we engineered.",
+    a: "You own the code, the infrastructure, and the documentation outright. Handover is a scheduled part of the plan, not an afterthought - a working period where your team runs the system while we're still available. Plenty of clients keep us on afterwards, but that should be a choice, not a dependency we engineered.",
   },
   {
     n: "10",
@@ -72,7 +72,7 @@ const GROUP_3 = [
   {
     n: "11",
     q: "How do you handle our data and security?",
-    a: "Under a signed NDA from the first conversation onwards. In delivery: least-privilege access, credentials held in your systems rather than ours, and access revoked at handover. If you operate under a specific compliance regime, tell us early — it changes architecture decisions, and it's expensive to retrofit.",
+    a: "Under a signed NDA from the first conversation onwards. In delivery: least-privilege access, credentials held in your systems rather than ours, and access revoked at handover. If you operate under a specific compliance regime, tell us early - it changes architecture decisions, and it's expensive to retrofit.",
   },
   {
     n: "12",
@@ -115,7 +115,7 @@ export default function Faq() {
   return (
     <>
       <PageHead id="faq-hero" className="pagehead--faq" label="FAQ" title="The questions, answered plainly.">
-        Everything we get asked before a first conversation — written out here
+        Everything we get asked before a first conversation - written out here
         so the call can be about your business instead.
       </PageHead>
 

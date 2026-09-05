@@ -31,7 +31,7 @@ const SERVICES = [
     n: "04",
     title: "Custom Software Engineering",
     claim: "Because the moment you're worth copying, off-the-shelf stops fitting.",
-    body: "We build the platforms, dashboards, and apps shaped to exactly how you operate — and no one else.",
+    body: "We build the platforms, dashboards, and apps shaped to exactly how you operate - and no one else.",
     href: "/services#engineering",
   },
   {
@@ -44,7 +44,7 @@ const SERVICES = [
   {
     n: "06",
     title: "Technology Strategy",
-    claim: "Because the wrong tech bill arrives twice — once to buy it, once to undo it.",
+    claim: "Because the wrong tech bill arrives twice - once to buy it, once to undo it.",
     body: "We're the long-term partner who helps you spend on the right things, before the cheque is written.",
     href: "/services#strategy",
   },
@@ -131,7 +131,7 @@ export default function Home() {
             </Reveal>
             <Reveal as="div" delay="d2">
               <p className="lede">
-                When growth gets hard, the instinct is to buy more — more
+                When growth gets hard, the instinct is to buy more - more
                 tools, more dashboards, more logins. The chaos doesn't shrink.
                 It just gets a subscription.
               </p>
@@ -160,7 +160,7 @@ export default function Home() {
             </div>
             <Reveal as="div" delay="d2" style={{ alignSelf: "end" }}>
               <p className="lede">
-                Every capability starts with a claim — and the reason it
+                Every capability starts with a claim - and the reason it
                 matters. Because we don't sell software. We build the systems
                 that make businesses grow.
               </p>
@@ -261,7 +261,7 @@ export default function Home() {
               Stop managing the chaos. Start building what's next.
             </Reveal>
             <Reveal as="p" delay="d2" className="lede">
-              The best time to talk is while things still work — not the week
+              The best time to talk is while things still work - not the week
               they break. One focused session on what's actually slowing you
               down. No pitch deck, no obligation.
             </Reveal>

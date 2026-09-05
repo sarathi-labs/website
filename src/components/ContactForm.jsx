@@ -5,7 +5,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Label } from "@/components/ui/label";
 import { cn } from "@/lib/utils";
 
-// Leads are delivered via FormSubmit (formsubmit.co) straight to this inbox —
+// Leads are delivered via FormSubmit (formsubmit.co) straight to this inbox -
 // no backend of our own required. First submission triggers a one-click
 // activation email to this address; after that, every submission lands
 // directly. Override with VITE_FORM_ENDPOINT if you'd rather use a different
@@ -76,7 +76,7 @@ export default function ContactForm({ showCompany = false, className }) {
       onSubmit={handleSubmit}
       className={cn("form", className)}
     >
-      <input type="hidden" name="_subject" value="New Consultation Request — Sarathi Labs" />
+      <input type="hidden" name="_subject" value="New Consultation Request - Sarathi Labs" />
       <input type="text" name="_honey" style={{ display: "none" }} tabIndex={-1} autoComplete="off" />
 
       <div className="field">
@@ -104,7 +104,7 @@ export default function ContactForm({ showCompany = false, className }) {
 
       {status === "error" && (
         <p className="mt-3 text-[13px] text-center" style={{ color: "#b3261e" }}>
-          Something went wrong sending that — please try again, or email us directly.
+          Something went wrong sending that - please try again, or email us directly.
         </p>
       )}
     </form>

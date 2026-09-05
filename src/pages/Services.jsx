@@ -17,7 +17,7 @@ const SERVICES = [
     title: "Business Process Consulting",
     teaser: "Because you can't automate your way out of a broken workflow.",
     body: [
-      "You can't automate your way out of a broken workflow. We map how operations actually run today — not the org-chart version — and find where time and money leak between handoffs.",
+      "You can't automate your way out of a broken workflow. We map how operations actually run today - not the org-chart version - and find where time and money leak between handoffs.",
       "The output is a redesigned workflow anyone on the team can follow, with the friction removed before a single line of code gets written on top of it.",
     ],
     cols: [
@@ -32,7 +32,7 @@ const SERVICES = [
     title: "Digital Transformation",
     teaser: "Because ten tools that don't talk is nine too many.",
     body: [
-      "Most businesses don't have too little software — they have too much of it, disconnected. We bring ERP, cloud, and operational systems into one coherent stack instead of a pile of point solutions.",
+      "Most businesses don't have too little software - they have too much of it, disconnected. We bring ERP, cloud, and operational systems into one coherent stack instead of a pile of point solutions.",
       "That means fewer logins, fewer re-typed numbers, and a system that tells the same story everywhere it's read.",
     ],
     cols: [
@@ -47,7 +47,7 @@ const SERVICES = [
     title: "AI & Automation",
     teaser: "Because your best people are too expensive to spend on copy-paste.",
     body: [
-      "Repetitive work — reconciliation, reporting, data entry, first-pass review — goes to machines. Not because it's fashionable, but because it gives skilled people their week back.",
+      "Repetitive work - reconciliation, reporting, data entry, first-pass review - goes to machines. Not because it's fashionable, but because it gives skilled people their week back.",
       "We're deliberate about where AI actually helps versus where it just adds a new failure mode. Every automation ships with a human checkpoint where the stakes call for one.",
     ],
     cols: [
@@ -63,7 +63,7 @@ const SERVICES = [
     teaser: "Because the moment you're worth copying, off-the-shelf stops fitting.",
     body: [
       "When off-the-shelf software makes you bend the business to fit it, we build the platform, dashboard, portal, or internal tool shaped around how you actually operate.",
-      "Built to be owned, not rented — documented, tested, and handed over cleanly at the end of the engagement.",
+      "Built to be owned, not rented - documented, tested, and handed over cleanly at the end of the engagement.",
     ],
     cols: [
       { n: "01", title: "The product", body: "Built to your operation, not a template" },
@@ -78,7 +78,7 @@ const SERVICES = [
     teaser: "Because a decision made on scattered data is just a guess in a suit.",
     body: [
       "A decision made on outdated data is just a guess in a suit. We turn the numbers you already have into information people actually trust at the table.",
-      "That means one reconciled source of truth, and dashboards built for the decision they're meant to support — not a wall of charts nobody opens twice.",
+      "That means one reconciled source of truth, and dashboards built for the decision they're meant to support - not a wall of charts nobody opens twice.",
     ],
     cols: [
       { n: "01", title: "Single source", body: "One reconciled version of the numbers" },
@@ -90,9 +90,9 @@ const SERVICES = [
     id: "strategy",
     n: "06",
     title: "Technology Strategy",
-    teaser: "Because the wrong tech bill arrives twice — once to buy it, once to undo it.",
+    teaser: "Because the wrong tech bill arrives twice - once to buy it, once to undo it.",
     body: [
-      "We're the long-term partner who helps you spend on the right things before the cheque is written — not after a costly rebuild proves the first choice wrong.",
+      "We're the long-term partner who helps you spend on the right things before the cheque is written - not after a costly rebuild proves the first choice wrong.",
       "A clear-eyed roadmap: what to build, what to buy, and what to leave alone for another year.",
     ],
     cols: [
@@ -157,7 +157,7 @@ export default function Services() {
                     Six ways we earn our keep.
                   </h1>
                   <p className="lede" style={{ fontSize: 15, lineHeight: 1.6, marginBottom: 0 }}>
-                    Every capability starts with a claim — and the reason it
+                    Every capability starts with a claim - and the reason it
                     matters. We don't sell software licences. We build the
                     systems that make businesses grow.
                   </p>
@@ -217,7 +217,7 @@ export default function Services() {
           </Reveal>
           <Reveal as="p" delay="d2" className="lede">
             Whichever service you start with, the shape of the work is the
-            same — and so is the point at which you get to change your mind.
+            same - and so is the point at which you get to change your mind.
           </Reveal>
           <div className="cols cols--4">
             {DELIVERY.map((c, i) => (
@@ -244,7 +244,7 @@ export default function Services() {
               That's normal. Almost every engagement starts as a conversation
               about a symptom, not a service picked off a list. Tell us what
               feels harder than it should and we'll tell you which of the six
-              it actually is — or that it's none of them.
+              it actually is - or that it's none of them.
             </p>
             <div style={{ marginTop: "var(--s2)" }}>
               <Button asChild variant="accent">

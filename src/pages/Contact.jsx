@@ -5,7 +5,7 @@ import SectionRail from "@/components/SectionRail";
 const NEXT_STEPS = [
   { n: "01", title: "We reply", body: "Within one business day, from a person who read what you wrote." },
   { n: "02", title: "Ninety minutes", body: "One focused session on the constraint, not a sales call in disguise." },
-  { n: "03", title: "A written read-back", body: "What we heard and what we'd fix first — yours either way." },
+  { n: "03", title: "A written read-back", body: "What we heard and what we'd fix first - yours either way." },
 ];
 
 const RAIL_SECTIONS = [
@@ -24,7 +24,7 @@ export default function Contact() {
               Stop managing the chaos. Start building what's next.
             </Reveal>
             <Reveal as="p" delay="d2" className="lede" style={{ color: "var(--muted-inv)" }}>
-              The best time to talk is while things still work — not the week
+              The best time to talk is while things still work - not the week
               they break. One focused session on what's actually slowing you
               down. No pitch deck, no obligation.
             </Reveal>

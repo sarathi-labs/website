@@ -43,7 +43,7 @@ export default function About() {
   return (
     <>
       <PageHead id="intro" className="pagehead--about" label="About" title="Named for the charioteer.">
-        Sarathi means the one who guides the chariot — the steady hand beside
+        Sarathi means the one who guides the chariot - the steady hand beside
         the driver, not the one holding the reins for them. That's the
         relationship we try to build with every client.
       </PageHead>
@@ -61,7 +61,7 @@ export default function About() {
             <Reveal as="div" delay="d2">
               <p className="lede">
                 In the old stories the sarathi sits beside the warrior. He
-                doesn't fight the battle and he doesn't take the credit — he
+                doesn't fight the battle and he doesn't take the credit - he
                 knows the ground, reads the field, and keeps the chariot
                 moving in the right direction.
               </p>
@@ -80,7 +80,7 @@ export default function About() {
           <Reveal as="span" className="label">Our philosophy</Reveal>
           <Reveal as="p" delay="d1" className="h-statement" style={{ maxWidth: "24ch" }}>
             The best technology is the kind you stop noticing. When it makes
-            the job harder, not lighter, it has failed — however clever it
+            the job harder, not lighter, it has failed - however clever it
             looks.
           </Reveal>
           <div className="bento">
@@ -106,7 +106,7 @@ export default function About() {
             </div>
             <Reveal as="div" delay="d2" style={{ alignSelf: "end" }}>
               <p className="lede">
-                We research, prototype, validate, and engineer — because a
+                We research, prototype, validate, and engineer - because a
                 solution that hasn't been tested against reality is only a
                 theory.
               </p>
@@ -163,7 +163,7 @@ export default function About() {
           <div>
             <Reveal as="span" className="label">Careers</Reveal>
             <Reveal as="h2" delay="d1" className="h-section">
-              We're small on purpose — and always looking.
+              We're small on purpose - and always looking.
             </Reveal>
           </div>
           <Reveal as="div" delay="d2" style={{ alignSelf: "end" }}>

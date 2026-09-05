@@ -158,13 +158,13 @@ export default function Work() {
               <div>
                 <p>
                   Architected a remittance platform moving money from the US
-                  into Latin America — banking, KYC/KYB, and off-ramp partners
-                  in one flow — then extended it into a vendor network and
+                  into Latin America - banking, KYC/KYB, and off-ramp partners
+                  in one flow - then extended it into a vendor network and
                   disaster-relief transfers for aid organisations.
                 </p>
                 <p className="because">
                   Because cross-border payments fail in the gaps between
-                  systems — so we closed the gaps.
+                  systems - so we closed the gaps.
                 </p>
               </div>
               <div className="chips">
@@ -188,12 +188,12 @@ export default function Work() {
               <div>
                 <p>
                   Digitised the full lifecycle of a 900+ machine IoT vending
-                  network — deployment, refilling, maintenance, and support —
+                  network - deployment, refilling, maintenance, and support -
                   through one centralised dashboard with integrated digital
                   payments, now processing ₹1.5 Cr+ per month.
                 </p>
                 <p className="because">
-                  Because 900 machines managed by hand is not an operation —
+                  Because 900 machines managed by hand is not an operation -
                   it's a fire waiting to start.
                 </p>
               </div>
@@ -211,7 +211,7 @@ export default function Work() {
                   kept the site fast under load.
                 </p>
                 <p className="because">
-                  Because at scale, a slow page isn't an inconvenience — it's
+                  Because at scale, a slow page isn't an inconvenience - it's
                   lost revenue, measured daily.
                 </p>
               </div>
