@@ -102,13 +102,13 @@ export default function Nav() {
         >
           <img
             className="lg-dark absolute left-0 top-1/2 -translate-y-1/2 h-[50px] w-auto transition-opacity duration-[350ms]"
-            src="/assets/favicon.png"
+            src="/assets/sarathi labs logo.png"
             alt="Sarathi Labs"
           />
           <img
             className="lg-light absolute left-0 top-1/2 -translate-y-1/2 h-[50px] w-auto transition-opacity duration-[350ms]"
-            src="/assets/favicon.png"
-            alt=""
+            src="/assets/sarathi labs logo.png"
+            alt="Sarathi Labs"
           />
         </Link>
 
