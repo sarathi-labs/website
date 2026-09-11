@@ -190,7 +190,7 @@ export default function Footer() {
 
         <div className="footer-base border-t border-[var(--rule-inv)] mt-[var(--s3)] pt-[22px] flex justify-between gap-4 flex-wrap font-mono text-[11px] tracking-[.06em] text-[var(--muted-inv)]">
           <span>© {new Date().getFullYear()} Sarathi Labs · SF Consultancy</span>
-          <span>GSTIN: 27ABCDE1234F1Z5</span>
+          <span>GSTIN: 27ACXPF3895P1ZF</span>
           <span>Mumbai, India</span>
           <span>
             <a className="no-underline inline-block py-[13px] -my-[13px] hover:text-white" href="#">
