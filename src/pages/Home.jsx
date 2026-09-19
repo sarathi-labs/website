@@ -141,10 +141,6 @@ export default function Home() {
                   <span className="proof-logo-text">Kura</span>
                 </div>
               </a>
-
-              {Array.from({ length: 4 }).map((_, i) => (
-                <span className="proof-slot proof-slot--placeholder" key={i} />
-              ))}
             </div>
           </div>
         </div>
