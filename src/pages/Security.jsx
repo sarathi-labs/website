@@ -106,8 +106,10 @@ export default function Security() {
             </p>
 
             <div style={{ marginTop: 28, marginBottom: 40 }}>
-              <Button asChild variant="accent">
-                <Link to="/contact">Discuss security requirements with us &rarr;</Link>
+              <Button asChild variant="accent" className="!text-white no-underline hover:!text-white">
+                <Link to="/contact" className="!text-white no-underline hover:!text-white">
+                  Discuss security requirements with us &rarr;
+                </Link>
               </Button>
             </div>
 

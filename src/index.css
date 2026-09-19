@@ -1673,3 +1673,19 @@ html.intro-lock,html.intro-lock body{overflow:hidden!important;height:100%}
 .legal-doc a:hover{
   color:var(--blue-lift);
 }
+.legal-doc a.inline-flex,
+.legal-doc a[class*="inline-flex"],
+.legal-doc a.btn,
+.legal-doc button {
+  text-decoration: none;
+}
+.legal-doc a.text-white,
+.legal-doc a[class*="text-white"] {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.legal-doc a.text-white:hover,
+.legal-doc a[class*="text-white"]:hover {
+  color: #fff !important;
+}
+
