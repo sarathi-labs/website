@@ -1,25 +1,17 @@
 import { Link } from "react-router-dom";
-import PageHead from "@/components/PageHead";
 import Reveal from "@/components/Reveal";
 import { Button } from "@/components/ui/button";
 
 export default function Security() {
   return (
-    <>
-      <PageHead
-        id="security-hero"
-        className="min-h-0 py-[120px] pb-[60px]"
-        label="Security"
-        title="Data Handling & Security Statement"
-      >
-        Built with security in mind. Client information and business data deserve
-        careful stewardship, clear boundaries, and rigorous engineering hygiene.
-      </PageHead>
-
-      <section className="sc sc--white">
-        <div className="wrap">
-          <Reveal as="div" className="legal-doc">
+    <div className="legal-page">
+      <div className="wrap">
+        <Reveal as="div" className="legal-doc">
+          <div className="legal-header">
+            <span className="label">Security</span>
+            <h1>Data Handling &amp; Security Statement</h1>
             <p className="legal-meta">Last Updated: September 19, 2026</p>
+          </div>
 
             <p>
               When organizations partner with Sarathi Labs to redesign workflows, modernize stacks, or build
@@ -135,8 +127,8 @@ export default function Security() {
               Location: Mumbai, India
             </p>
           </Reveal>
-        </div>
-      </section>
-    </>
+      </div>
+    </div>
   );
 }
+

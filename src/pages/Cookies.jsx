@@ -1,23 +1,15 @@
-import PageHead from "@/components/PageHead";
 import Reveal from "@/components/Reveal";
 
 export default function Cookies() {
   return (
-    <>
-      <PageHead
-        id="cookies-hero"
-        className="min-h-0 py-[120px] pb-[60px]"
-        label="Legal"
-        title="Cookie Policy"
-      >
-        How Sarathi Labs uses cookies and similar technologies to maintain
-        performance and deliver a reliable website experience.
-      </PageHead>
-
-      <section className="sc sc--white">
-        <div className="wrap">
-          <Reveal as="div" className="legal-doc">
+    <div className="legal-page">
+      <div className="wrap">
+        <Reveal as="div" className="legal-doc">
+          <div className="legal-header">
+            <span className="label">Legal</span>
+            <h1>Cookie Policy</h1>
             <p className="legal-meta">Last Updated: September 19, 2026</p>
+          </div>
 
             <p>
               This Cookie Policy explains how Sarathi Labs (&ldquo;Sarathi Labs,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
@@ -116,8 +108,8 @@ export default function Cookies() {
               Location: Mumbai, India
             </p>
           </Reveal>
-        </div>
-      </section>
-    </>
+      </div>
+    </div>
   );
 }
+

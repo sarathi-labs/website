@@ -1,23 +1,15 @@
-import PageHead from "@/components/PageHead";
 import Reveal from "@/components/Reveal";
 
 export default function Terms() {
   return (
-    <>
-      <PageHead
-        id="terms-hero"
-        className="min-h-0 py-[120px] pb-[60px]"
-        label="Legal"
-        title="Terms of Service"
-      >
-        The terms governing your access to and use of the Sarathi Labs website
-        and digital resources.
-      </PageHead>
-
-      <section className="sc sc--white">
-        <div className="wrap">
-          <Reveal as="div" className="legal-doc">
+    <div className="legal-page">
+      <div className="wrap">
+        <Reveal as="div" className="legal-doc">
+          <div className="legal-header">
+            <span className="label">Legal</span>
+            <h1>Terms of Service</h1>
             <p className="legal-meta">Last Updated: September 19, 2026</p>
+          </div>
 
             <p>
               Welcome to Sarathi Labs. These Terms of Service (&ldquo;Terms&rdquo;) govern your access to and
@@ -186,8 +178,8 @@ export default function Terms() {
               Location: Mumbai, India
             </p>
           </Reveal>
-        </div>
-      </section>
-    </>
+      </div>
+    </div>
   );
 }
+

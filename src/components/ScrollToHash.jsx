@@ -17,12 +17,16 @@ export default function ScrollToHash() {
 
     if (location.hash) {
       const id = location.hash.replace(/^#/, "");
+      // Service tabs should scroll the viewport to the Capabilities section header (Image 2)
+      const serviceIds = ["process", "transformation", "automation", "engineering", "data", "strategy"];
+      const targetId = serviceIds.includes(id) ? "capabilities" : id;
+
       let rafId;
       let attempts = 0;
       const maxAttempts = 20; // check for up to ~350ms for React/Radix to mount
 
       const tryScroll = () => {
-        const el = document.getElementById(id);
+        const el = document.getElementById(targetId);
         if (el) {
           el.scrollIntoView({ behavior: isNewPage ? "auto" : "smooth", block: "start" });
           return;

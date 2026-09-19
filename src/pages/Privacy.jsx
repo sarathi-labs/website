@@ -1,23 +1,15 @@
-import PageHead from "@/components/PageHead";
 import Reveal from "@/components/Reveal";
 
 export default function Privacy() {
   return (
-    <>
-      <PageHead
-        id="privacy-hero"
-        className="min-h-0 py-[120px] pb-[60px]"
-        label="Legal"
-        title="Privacy Policy"
-      >
-        How Sarathi Labs collects, uses, and safeguards information when you
-        visit our website or interact with our services.
-      </PageHead>
-
-      <section className="sc sc--white">
-        <div className="wrap">
-          <Reveal as="div" className="legal-doc">
+    <div className="legal-page">
+      <div className="wrap">
+        <Reveal as="div" className="legal-doc">
+          <div className="legal-header">
+            <span className="label">Legal</span>
+            <h1>Privacy Policy</h1>
             <p className="legal-meta">Last Updated: September 19, 2026</p>
+          </div>
 
             <p>
               Sarathi Labs (&ldquo;Sarathi Labs,&rdquo; &ldquo;we,&rdquo; &ldquo;us,&rdquo; or &ldquo;our&rdquo;)
@@ -190,8 +182,8 @@ export default function Privacy() {
               Location: Mumbai, India
             </p>
           </Reveal>
-        </div>
-      </section>
-    </>
+      </div>
+    </div>
   );
 }
+

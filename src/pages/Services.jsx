@@ -165,7 +165,7 @@ export default function Services() {
 
                 <TabsList aria-label="Services capabilities navigation">
                   {SERVICES.map((s) => (
-                    <TabsTrigger key={s.id} value={s.id} id={s.id}>
+                    <TabsTrigger key={s.id} value={s.id}>
                       <div className="service-nav-top">
                         <div className="service-nav-meta">
                           <span className="service-nav-num">{s.n}</span>
