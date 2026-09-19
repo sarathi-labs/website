@@ -1358,7 +1358,7 @@ a[href^="tel:"]{white-space:nowrap}
    ========================================================================== */
 
 .footer{background:var(--ink-2);color:var(--text-inv);padding:var(--s3) 0 var(--s1);display:flex;align-items:center}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:var(--s2) var(--s1)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:var(--s2) var(--s1)}
 .footer-brand img{height:62px;width:auto;margin-bottom:20px}
 .footer-brand p{font-size:14px;color:var(--muted-inv);line-height:1.6;max-width:34ch}
 .footer-brand .fc{margin-top:var(--s1);font:400 13px/2 "IBM Plex Mono",monospace;color:var(--muted-inv)}
@@ -1583,4 +1583,72 @@ html.intro-lock,html.intro-lock body{overflow:hidden!important;height:100%}
   .reassure-sep{display:none}
   .cta-direct-contact{flex-direction:column;align-items:flex-start;gap:6px}
   .cta-direct-contact .sep{display:none}
+}
+
+/* ==========================================================================
+   20. LEGAL & POLICY DOCUMENTS
+   ========================================================================== */
+.legal-doc{
+  max-width:760px;
+  margin:0 auto;
+  padding:clamp(36px, 5vh, 64px) 0 clamp(48px, 8vh, 96px);
+  color:var(--text);
+}
+.legal-meta{
+  font:500 12px/1.4 "IBM Plex Mono",monospace;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  color:var(--muted);
+  margin-bottom:28px;
+}
+.legal-doc h2{
+  font-family:"DM Sans",sans-serif;
+  font-size:clamp(20px, 2.2vw, 25px);
+  font-weight:600;
+  letter-spacing:-0.02em;
+  color:var(--text);
+  margin:44px 0 16px;
+  padding-top:32px;
+  border-top:1px solid var(--rule);
+}
+.legal-doc h2:first-of-type{
+  margin-top:28px;
+  padding-top:28px;
+}
+.legal-doc h3{
+  font-family:"DM Sans",sans-serif;
+  font-size:16.5px;
+  font-weight:600;
+  letter-spacing:-0.01em;
+  color:var(--text);
+  margin:24px 0 10px;
+}
+.legal-doc p{
+  font-size:15.5px;
+  line-height:1.75;
+  color:var(--muted);
+  margin:0 0 16px;
+}
+.legal-doc ul{
+  list-style:disc;
+  padding-left:22px;
+  margin:0 0 20px;
+  color:var(--muted);
+}
+.legal-doc li{
+  font-size:15px;
+  line-height:1.7;
+  margin-bottom:8px;
+}
+.legal-doc strong{
+  color:var(--text);
+  font-weight:600;
+}
+.legal-doc a{
+  color:var(--blue);
+  text-decoration:underline;
+  transition:color .2s var(--ease);
+}
+.legal-doc a:hover{
+  color:var(--blue-lift);
 }

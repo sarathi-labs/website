@@ -12,7 +12,7 @@ export default function Footer() {
   return (
     <footer className="footer bg-[var(--ink-2)] text-[var(--text-inv)] py-[var(--s3)] pb-[var(--s1)] flex items-center">
       <div className="wrap">
-        <div className="footer-grid grid grid-cols-[2fr_1fr_1fr_1fr] gap-x-6 gap-y-12">
+        <div className="footer-grid grid grid-cols-[2fr_1fr_1fr_1fr_1fr] gap-x-6 gap-y-12">
           <div className="footer-brand">
             <img
               src="/assets/logo-lockup-cream.png"
@@ -186,6 +186,36 @@ export default function Footer() {
               Approach
             </Link>
           </div>
+
+          <div className="footer-col">
+            <h4 className="font-mono text-[10px] uppercase tracking-[.14em] text-[var(--muted-inv)] mb-5 font-normal">
+              Legal
+            </h4>
+            <Link
+              className="block text-sm text-[var(--muted-inv)] no-underline mb-[13px] transition-colors duration-300 hover:text-white"
+              to="/privacy"
+            >
+              Privacy Policy
+            </Link>
+            <Link
+              className="block text-sm text-[var(--muted-inv)] no-underline mb-[13px] transition-colors duration-300 hover:text-white"
+              to="/terms"
+            >
+              Terms of Service
+            </Link>
+            <Link
+              className="block text-sm text-[var(--muted-inv)] no-underline mb-[13px] transition-colors duration-300 hover:text-white"
+              to="/cookies"
+            >
+              Cookie Policy
+            </Link>
+            <Link
+              className="block text-sm text-[var(--muted-inv)] no-underline mb-[13px] transition-colors duration-300 hover:text-white"
+              to="/security"
+            >
+              Data Handling &amp; Security
+            </Link>
+          </div>
         </div>
 
         <div className="footer-base border-t border-[var(--rule-inv)] mt-[var(--s3)] pt-[22px] flex justify-between gap-4 flex-wrap font-mono text-[11px] tracking-[.06em] text-[var(--muted-inv)]">
@@ -193,10 +223,13 @@ export default function Footer() {
           <span>GSTIN: 27ACXPF3895P1ZF</span>
           <span>Mumbai, India</span>
           <span>
-            <a className="no-underline inline-block py-[13px] -my-[13px] hover:text-white" href="#">
+            <Link className="no-underline inline-block py-[13px] -my-[13px] hover:text-white" to="/privacy">
               Privacy
-            </a>{" "}
-            · <a className="no-underline inline-block py-[13px] -my-[13px] hover:text-white" href="#">Terms</a>
+            </Link>{" "}
+            ·{" "}
+            <Link className="no-underline inline-block py-[13px] -my-[13px] hover:text-white" to="/terms">
+              Terms
+            </Link>
           </span>
         </div>
       </div>

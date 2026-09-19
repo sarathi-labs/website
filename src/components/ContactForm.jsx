@@ -1,4 +1,5 @@
 import { useId, useRef, useState } from "react";
+import { Link } from "react-router-dom";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -101,6 +102,14 @@ export default function ContactForm({ showCompany = false, className }) {
       <Button type="submit" variant="accent" size="full" disabled={status === "submitting"}>
         {buttonLabel}
       </Button>
+
+      <p className="mt-3 text-[12px] text-center text-[var(--muted)] leading-[1.5]">
+        We&rsquo;ll use the information you provide to respond to your enquiry. See our{" "}
+        <Link to="/privacy" className="text-[var(--blue)] underline hover:text-[var(--blue-lift)]">
+          Privacy Policy
+        </Link>{" "}
+        for details.
+      </p>
 
       {status === "error" && (
         <p className="mt-3 text-[13px] text-center" style={{ color: "#b3261e" }}>
