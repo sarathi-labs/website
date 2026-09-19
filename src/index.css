@@ -600,7 +600,7 @@ p:last-child{margin-bottom:0}
   font-size:15px;color:var(--muted);
 }
 
-section[id]{scroll-margin-top:90px}
+section[id], [id]{scroll-margin-top:90px}
 
 /* ==========================================================================
    11. FAQ / ACCORDION & CATEGORY TABS
