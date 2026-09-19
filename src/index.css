@@ -726,8 +726,17 @@ section[id]{scroll-margin-top:90px}
 .field input:focus,.field textarea:focus{border-bottom-color:var(--blue)}
 .field textarea{height:96px;resize:vertical}
 .form .btn{width:100%;justify-content:center;margin-top:6px}
-.reassure{display:flex;align-items:center;gap:10px;font:400 12px/1 "IBM Plex Mono",monospace;color:var(--muted);margin-top:var(--s1)}
-.reassure .dot{width:6px;height:6px;border-radius:50%;background:var(--blue);flex:none}
+.reassure{display:flex;align-items:flex-start;gap:10px;font:400 12px/1.5 "IBM Plex Mono",monospace;color:var(--muted);margin-top:var(--s1)}
+.reassure .dot{width:6px;height:6px;border-radius:50%;background:var(--blue);flex:none;margin-top:6px}
+.reassure-body{display:flex;align-items:center;flex-wrap:wrap;column-gap:8px;row-gap:4px}
+.reassure-direct{white-space:nowrap;display:inline-flex;align-items:center;gap:4px}
+.reassure-phone{color:var(--blue);text-decoration:none;font-weight:500;white-space:nowrap;transition:color .2s var(--ease)}
+.reassure-phone:hover{color:var(--blue-lift);text-decoration:underline}
+.reassure-sep{opacity:0.45}
+.reassure-note{white-space:nowrap}
+a[href^="tel:"]{white-space:nowrap}
+.sc--dark .reassure{color:var(--muted-inv)}
+.sc--dark .reassure-phone{color:#7CB7FF}
 
 .contact-lines{list-style:none;padding:0;margin:var(--s2) 0 0}
 .contact-lines li{padding:16px 0;border-top:1px solid var(--rule)}
@@ -1570,4 +1579,8 @@ html.intro-lock,html.intro-lock body{overflow:hidden!important;height:100%}
   .proof-logos{grid-template-columns:repeat(2,1fr)}
   .work-hero-stats{grid-template-columns:1fr}
   .panel-deliverables{grid-template-columns:1fr}
+  .reassure-body{flex-direction:column;align-items:flex-start;gap:4px}
+  .reassure-sep{display:none}
+  .cta-direct-contact{flex-direction:column;align-items:flex-start;gap:6px}
+  .cta-direct-contact .sep{display:none}
 }

@@ -266,11 +266,17 @@ export default function Home() {
               down. No pitch deck, no obligation.
             </Reveal>
             <Reveal as="div" delay="d3" className="reassure">
-              <span className="dot" /> Direct call:{" "}
-              <a href="tel:+919892656880" style={{ color: "var(--blue)", textDecoration: "none", fontWeight: 500 }}>
-                +91 98926 56880
-              </a>{" "}
-              · Reply within 24h
+              <span className="dot" />
+              <div className="reassure-body">
+                <span className="reassure-direct">
+                  Direct call:{" "}
+                  <a href="tel:+919892656880" className="reassure-phone">
+                    +91 98926 56880
+                  </a>
+                </span>
+                <span className="reassure-sep">·</span>
+                <span className="reassure-note">Reply within 24h</span>
+              </div>
             </Reveal>
           </div>
 
