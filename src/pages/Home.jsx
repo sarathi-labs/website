@@ -109,8 +109,41 @@ export default function Home() {
               </p>
             </div>
             <div className="proof-logos">
-              {Array.from({ length: 6 }).map((_, i) => (
-                <span className="proof-slot" key={i} />
+              <a
+                href="https://24buy7.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="proof-slot proof-slot--logo"
+                title="24buy7 — Quick Buying Solutions"
+                aria-label="24buy7 website"
+              >
+                <img
+                  src="/assets/logo-24buy7.png"
+                  alt="24buy7 logo"
+                  className="proof-logo-img proof-logo-img--24buy7"
+                />
+              </a>
+
+              <a
+                href="https://kura-finance.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="proof-slot proof-slot--logo"
+                title="Kura — Modern Finance, Redesigned"
+                aria-label="Kura Finance website"
+              >
+                <div className="proof-logo-lockup">
+                  <img
+                    src="/assets/logo-kura.webp"
+                    alt="Kura logo"
+                    className="proof-logo-icon"
+                  />
+                  <span className="proof-logo-text">Kura</span>
+                </div>
+              </a>
+
+              {Array.from({ length: 4 }).map((_, i) => (
+                <span className="proof-slot proof-slot--placeholder" key={i} />
               ))}
             </div>
           </div>
