@@ -125,21 +125,18 @@ export default function Home() {
               </a>
 
               <a
-                href="https://kura-finance.com/"
+                href="https://www.kuratek.com/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="proof-slot proof-slot--logo"
-                title="Kura — Modern Finance, Redesigned"
-                aria-label="Kura Finance website"
+                title="Kura — Fast and Reliable Digital Cross-Border Payments"
+                aria-label="Kura website"
               >
-                <div className="proof-logo-lockup">
-                  <img
-                    src="/assets/logo-kura.webp"
-                    alt="Kura logo"
-                    className="proof-logo-icon"
-                  />
-                  <span className="proof-logo-text">Kura</span>
-                </div>
+                <img
+                  src="/assets/logo-kura.png"
+                  alt="Kura logo"
+                  className="proof-logo-img proof-logo-img--kura"
+                />
               </a>
             </div>
           </div>

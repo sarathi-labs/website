@@ -428,6 +428,7 @@ p:last-child{margin-bottom:0}
 .proof-slot--logo{cursor:pointer}
 .proof-slot--logo:hover{border-color:var(--rule-strong);transform:translateY(-2px);box-shadow:0 4px 12px rgba(11,25,46,0.06)}
 .proof-logo-img{max-height:34px;max-width:100%;width:auto;object-fit:contain;mix-blend-mode:multiply;transition:opacity .2s var(--ease)}
+.proof-logo-img--kura{max-height:28px}
 .proof-logo-lockup{display:flex;align-items:center;justify-content:center;gap:9px;user-select:none}
 .proof-logo-icon{height:24px;width:24px;object-fit:contain}
 .proof-logo-text{font-family:"DM Sans",sans-serif;font-size:15.5px;font-weight:600;letter-spacing:-0.01em;color:var(--text);line-height:1}
