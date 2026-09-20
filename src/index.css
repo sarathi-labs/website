@@ -423,8 +423,16 @@ p:last-child{margin-bottom:0}
 .proof-row{display:flex;align-items:center;justify-content:space-between;gap:var(--s1);flex-wrap:wrap}
 .proof .label{margin:0}
 .proof-note{font-size:13px;color:var(--muted);margin:0}
-.proof-logos{display:grid;grid-template-columns:repeat(6,1fr);gap:12px;width:100%}
-.proof-slot{height:34px;background:var(--slot);border-radius:2px}
+.proof-logos{display:flex;align-items:center;justify-content:center;gap:18px;width:100%;flex-wrap:wrap}
+.proof-slot{height:48px;width:clamp(200px,25vw,260px);background:var(--paper-3);border:1px solid var(--rule);border-radius:4px;display:flex;align-items:center;justify-content:center;padding:4px 18px;text-decoration:none;position:relative;transition:border-color .25s var(--ease),transform .25s var(--ease),box-shadow .25s var(--ease)}
+.proof-slot--logo{cursor:pointer}
+.proof-slot--logo:hover{border-color:var(--rule-strong);transform:translateY(-2px);box-shadow:0 4px 12px rgba(11,25,46,0.06)}
+.proof-logo-img{max-height:34px;max-width:100%;width:auto;object-fit:contain;mix-blend-mode:multiply;transition:opacity .2s var(--ease)}
+.proof-logo-img--kura{max-height:28px}
+.proof-logo-lockup{display:flex;align-items:center;justify-content:center;gap:9px;user-select:none}
+.proof-logo-icon{height:24px;width:24px;object-fit:contain}
+.proof-logo-text{font-family:"DM Sans",sans-serif;font-size:15.5px;font-weight:600;letter-spacing:-0.01em;color:var(--text);line-height:1}
+
 
 /* ==========================================================================
    6. LAYOUT PRIMITIVES
@@ -600,7 +608,7 @@ p:last-child{margin-bottom:0}
   font-size:15px;color:var(--muted);
 }
 
-section[id]{scroll-margin-top:90px}
+section[id], [id]{scroll-margin-top:90px}
 
 /* ==========================================================================
    11. FAQ / ACCORDION & CATEGORY TABS
@@ -726,8 +734,17 @@ section[id]{scroll-margin-top:90px}
 .field input:focus,.field textarea:focus{border-bottom-color:var(--blue)}
 .field textarea{height:96px;resize:vertical}
 .form .btn{width:100%;justify-content:center;margin-top:6px}
-.reassure{display:flex;align-items:center;gap:10px;font:400 12px/1 "IBM Plex Mono",monospace;color:var(--muted);margin-top:var(--s1)}
-.reassure .dot{width:6px;height:6px;border-radius:50%;background:var(--blue);flex:none}
+.reassure{display:flex;align-items:flex-start;gap:10px;font:400 12px/1.5 "IBM Plex Mono",monospace;color:var(--muted);margin-top:var(--s1)}
+.reassure .dot{width:6px;height:6px;border-radius:50%;background:var(--blue);flex:none;margin-top:6px}
+.reassure-body{display:flex;align-items:center;flex-wrap:wrap;column-gap:8px;row-gap:4px}
+.reassure-direct{white-space:nowrap;display:inline-flex;align-items:center;gap:4px}
+.reassure-phone{color:var(--blue);text-decoration:none;font-weight:500;white-space:nowrap;transition:color .2s var(--ease)}
+.reassure-phone:hover{color:var(--blue-lift);text-decoration:underline}
+.reassure-sep{opacity:0.45}
+.reassure-note{white-space:nowrap}
+a[href^="tel:"]{white-space:nowrap}
+.sc--dark .reassure{color:var(--muted-inv)}
+.sc--dark .reassure-phone{color:#7CB7FF}
 
 .contact-lines{list-style:none;padding:0;margin:var(--s2) 0 0}
 .contact-lines li{padding:16px 0;border-top:1px solid var(--rule)}
@@ -1349,7 +1366,7 @@ section[id]{scroll-margin-top:90px}
    ========================================================================== */
 
 .footer{background:var(--ink-2);color:var(--text-inv);padding:var(--s3) 0 var(--s1);display:flex;align-items:center}
-.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr;gap:var(--s2) var(--s1)}
+.footer-grid{display:grid;grid-template-columns:2fr 1fr 1fr 1fr 1fr;gap:var(--s2) var(--s1)}
 .footer-brand img{height:62px;width:auto;margin-bottom:20px}
 .footer-brand p{font-size:14px;color:var(--muted-inv);line-height:1.6;max-width:34ch}
 .footer-brand .fc{margin-top:var(--s1);font:400 13px/2 "IBM Plex Mono",monospace;color:var(--muted-inv)}
@@ -1549,7 +1566,6 @@ html.intro-lock,html.intro-lock body{overflow:hidden!important;height:100%}
   .bento{grid-template-columns:repeat(4,1fr)}
   .bento-cell:first-child{grid-row:span 1;grid-column:span 4}
   .pills{flex-wrap:wrap;gap:10px}
-  .proof-logos{grid-template-columns:repeat(3,1fr)}
   .footer-grid{grid-template-columns:1fr 1fr}
   .rail{display:none}
 
@@ -1567,7 +1583,117 @@ html.intro-lock,html.intro-lock body{overflow:hidden!important;height:100%}
   .chips{grid-template-columns:1fr 1fr}
   .case{padding:22px 20px}
   .footer-grid{grid-template-columns:1fr}
-  .proof-logos{grid-template-columns:repeat(2,1fr)}
+  .proof-logos{gap:12px}
+  .proof-slot{width:calc(50% - 6px);min-width:140px;height:44px;padding:4px 10px}
   .work-hero-stats{grid-template-columns:1fr}
   .panel-deliverables{grid-template-columns:1fr}
+  .reassure-body{flex-direction:column;align-items:flex-start;gap:4px}
+  .reassure-sep{display:none}
+  .cta-direct-contact{flex-direction:column;align-items:flex-start;gap:6px}
+  .cta-direct-contact .sep{display:none}
 }
+
+/* ==========================================================================
+   20. LEGAL & POLICY DOCUMENTS
+   ========================================================================== */
+.legal-page{
+  background:var(--paper-3);
+  min-height:100vh;
+  padding-top:calc(var(--nav-h) + clamp(28px, 4.5vh, 52px));
+  padding-bottom:var(--s3);
+}
+.legal-header{
+  margin-bottom:32px;
+  border-bottom:1px solid var(--rule);
+  padding-bottom:24px;
+}
+.legal-header .label{
+  margin-bottom:12px;
+}
+.legal-header h1{
+  font-family:"Instrument Serif",Georgia,serif;
+  font-size:clamp(38px, 5vw, 60px);
+  line-height:1.06;
+  letter-spacing:-0.02em;
+  color:var(--text);
+  margin:0 0 16px;
+}
+.legal-doc{
+  max-width:760px;
+  margin:0 auto;
+  color:var(--text);
+}
+.legal-meta{
+  font:500 12px/1.4 "IBM Plex Mono",monospace;
+  text-transform:uppercase;
+  letter-spacing:.12em;
+  color:var(--muted);
+  margin-bottom:0;
+}
+.legal-doc h2{
+  font-family:"DM Sans",sans-serif;
+  font-size:clamp(20px, 2.2vw, 25px);
+  font-weight:600;
+  letter-spacing:-0.02em;
+  color:var(--text);
+  margin:44px 0 16px;
+  padding-top:32px;
+  border-top:1px solid var(--rule);
+}
+.legal-doc h2:first-of-type{
+  margin-top:28px;
+  padding-top:28px;
+}
+.legal-doc h3{
+  font-family:"DM Sans",sans-serif;
+  font-size:16.5px;
+  font-weight:600;
+  letter-spacing:-0.01em;
+  color:var(--text);
+  margin:24px 0 10px;
+}
+.legal-doc p{
+  font-size:15.5px;
+  line-height:1.75;
+  color:var(--muted);
+  margin:0 0 16px;
+}
+.legal-doc ul{
+  list-style:disc;
+  padding-left:22px;
+  margin:0 0 20px;
+  color:var(--muted);
+}
+.legal-doc li{
+  font-size:15px;
+  line-height:1.7;
+  margin-bottom:8px;
+}
+.legal-doc strong{
+  color:var(--text);
+  font-weight:600;
+}
+.legal-doc a{
+  color:var(--blue);
+  text-decoration:underline;
+  transition:color .2s var(--ease);
+}
+.legal-doc a:hover{
+  color:var(--blue-lift);
+}
+.legal-doc a.inline-flex,
+.legal-doc a[class*="inline-flex"],
+.legal-doc a.btn,
+.legal-doc button {
+  text-decoration: none;
+}
+.legal-doc a.text-white,
+.legal-doc a[class*="text-white"] {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+.legal-doc a.text-white:hover,
+.legal-doc a[class*="text-white"]:hover {
+  color: #fff !important;
+}
+

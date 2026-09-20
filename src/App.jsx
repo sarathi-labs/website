@@ -9,6 +9,10 @@ import Services from "@/pages/Services";
 import Work from "@/pages/Work";
 import Faq from "@/pages/Faq";
 import Contact from "@/pages/Contact";
+import Privacy from "@/pages/Privacy";
+import Terms from "@/pages/Terms";
+import Cookies from "@/pages/Cookies";
+import Security from "@/pages/Security";
 
 export default function App() {
   return (
@@ -22,6 +26,10 @@ export default function App() {
         <Route path="/work" element={<Work />} />
         <Route path="/faq" element={<Faq />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="/privacy" element={<Privacy />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/cookies" element={<Cookies />} />
+        <Route path="/security" element={<Security />} />
       </Routes>
       <Footer />
       <BackToTop />

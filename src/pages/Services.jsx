@@ -181,7 +181,7 @@ export default function Services() {
 
               <div className="service-panels">
                 {SERVICES.map((s) => (
-                  <TabsContent key={s.id} value={s.id}>
+                  <TabsContent key={s.id} value={s.id} id={`panel-${s.id}`}>
                     <div className="panel-header">
                       <span className="label">{s.n} · Service</span>
                       <h2 className="h-section" style={{ marginBottom: 6 }}>{s.title}</h2>

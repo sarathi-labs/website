@@ -109,9 +109,35 @@ export default function Home() {
               </p>
             </div>
             <div className="proof-logos">
-              {Array.from({ length: 6 }).map((_, i) => (
-                <span className="proof-slot" key={i} />
-              ))}
+              <a
+                href="https://24buy7.net/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="proof-slot proof-slot--logo"
+                title="24buy7 — Quick Buying Solutions"
+                aria-label="24buy7 website"
+              >
+                <img
+                  src="/assets/logo-24buy7.png"
+                  alt="24buy7 logo"
+                  className="proof-logo-img proof-logo-img--24buy7"
+                />
+              </a>
+
+              <a
+                href="https://www.kuratek.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="proof-slot proof-slot--logo"
+                title="Kura — Fast and Reliable Digital Cross-Border Payments"
+                aria-label="Kura website"
+              >
+                <img
+                  src="/assets/logo-kura.png"
+                  alt="Kura logo"
+                  className="proof-logo-img proof-logo-img--kura"
+                />
+              </a>
             </div>
           </div>
         </div>
@@ -266,11 +292,17 @@ export default function Home() {
               down. No pitch deck, no obligation.
             </Reveal>
             <Reveal as="div" delay="d3" className="reassure">
-              <span className="dot" /> Direct call:{" "}
-              <a href="tel:+919892656880" style={{ color: "var(--blue)", textDecoration: "none", fontWeight: 500 }}>
-                +91 98926 56880
-              </a>{" "}
-              · Reply within 24h
+              <span className="dot" />
+              <div className="reassure-body">
+                <span className="reassure-direct">
+                  Direct call:{" "}
+                  <a href="tel:+919892656880" className="reassure-phone">
+                    +91 98926 56880
+                  </a>
+                </span>
+                <span className="reassure-sep">·</span>
+                <span className="reassure-note">Reply within 24h</span>
+              </div>
             </Reveal>
           </div>
 
